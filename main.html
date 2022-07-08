@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <style>
+        body {
+            background: cyan;
+        }
+
+        h1 {
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            color: white;
+        }
+        h2 {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            color: white;
+        }
+
+        #parrot {
+            position: absolute;
+            left: 70%;
+            top: 38%;
+        }
+        #parrot img {
+            width: 391px;
+            height: 259px;
+        }
+        #man {
+            position: absolute;
+            left: 3%;
+            top: 65%;
+        }
+        #man img {
+            width: 250px;
+            height: 200px;
+        }
+        #right_cloud {
+            position: absolute;
+            left: 55%;
+            top: 15%;
+        }
+        #right_cloud img {
+            width: 224px;
+            height: 140px;
+        }
+        #left_cloud {
+            position: absolute;
+            left: 20%;
+            top: 42%;
+        }
+        #left_cloud img {
+            width: 251px;
+            height: 139px;
+        }
+        #left_text {
+            position: absolute;
+            left: 22%;
+            top: 46%;
+        }
+        #right_text {
+            position: absolute;
+            left: 57%;
+            top: 19%;
+        }
+        #choose {
+            position: absolute;
+            top: 65%;
+            left: 35%;
+            border-radius: 45px;
+        }
+        .pole {
+           text-align: center;
+            margin: 14px 0;
+        }
+        .level_button {
+            text-decoration: none;
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px 20px;
+            border-radius: 45px;
+            box-shadow: 0 0 40px 40px yellow inset, 0 0 0 0 yellow;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: black;
+            transition: .15s ease-in-out;
+        }
+        .level_button:hover {
+            box-shadow: 0 0 10px 0 yellow inset, 0 0 10px 4px yellow;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+<div id="parrot">
+    <img src="sinij_popugaj.png">
+</div>
+<div id="man">
+    <img src="man.png">
+</div>
+<div id="right_cloud">
+    <img src="cloud2.png">
+</div>
+<div id="left_cloud">
+    <img src="cloud.png">
+</div>
+<div>
+    <h1>PixelArt:</h1>
+    <h2>расскраска-антистресс</h2>
+</div>
+<div id="left_text">
+    <p>Почувствуй себя художником!</p>
+</div>
+<div id="right_text">
+    <p>Погрузись в мир красок!</p>
+</div>
+<div id="choose">
+    <div class="pole">
+       <p>Level</p>
+    </div>
+    <div id="levels">
+<button class="level_button" onclick="goToFirstStep()">Easy</button>
+<button class="level_button" onclick="goToSecondStep()">Optimal</button>
+<button class="level_button" onclick="goToThirdStep()">Hard</button>
+    </div>
+</div>
+
+<script>
+    function goToFirstStep (){
+        window.location.href = 'level1.html';
+    }
+
+    function goToSecondStep (){
+        window.location.href = 'level2.html';
+    }
+</script>
+</body>
+</html>
